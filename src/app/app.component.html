@@ -1,0 +1,17 @@
+<div>{{message}}</div>
+<div *ngFor="let item of array" class="row">
+  <div
+    *ngFor="let item2 of item"
+    class="col"
+    (click)="selectBox(item2)"
+    [ngStyle]="{'background-color': array3[item2]?.selected?color:''}"
+  ></div>
+</div>
+<div class="row">
+  <div>
+    Level:{{level}},
+  </div>
+  <div style="padding-left: 10px;">
+    chance:{{live}}
+  </div>
+</div>

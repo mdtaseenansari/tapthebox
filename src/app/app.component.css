@@ -1,0 +1,15 @@
+div {
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.col {
+  padding: 25px;
+  border: 1px solid;
+}
+
+.selected {
+  background-color: yellow;
+}
